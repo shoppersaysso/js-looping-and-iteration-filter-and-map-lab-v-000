@@ -1,8 +1,5 @@
-function driversWithRevenueOver(driver, revenue) {
-  driver.filter(function(driver){
-    
+function driversWithRevenueOver(drivers, revenue) {
+  drivers.filter(function(driver){
+    return driver.revenue > revenue;
   });
 }
-
-words.filter(function(word){
-  return word.length > 6;
