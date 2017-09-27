@@ -15,11 +15,10 @@ function exactMatch(drivers, name) {
   return drivers.filter(function(driver) {
     let matches = false;
 
-       for (const key in matcher) {
-         matches = driver[key] === matcher[key];
+       for (const key in name) {
+         matches = driver[key] === name[key];
        }
 
        return matches;
      });
    }
-
